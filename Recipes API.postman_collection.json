@@ -1,0 +1,451 @@
+{
+	"info": {
+		"_postman_id": "27f1f8d9-a89f-4b09-9639-fdb96e709d74",
+		"name": "Recipes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "recipes",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "get Recipe By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/recipes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"recipes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "voluptate dolor adipisicing do",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/recipes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"recipes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "voluptate dolor adipisicing do",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}"
+								}
+							]
+						},
+						{
+							"name": "put Recipe",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/recipes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"recipes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "voluptate dolor adipisicing do",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Accepted",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/recipes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"recipes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "voluptate dolor adipisicing do",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete Recipe By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/recipes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"recipes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "voluptate dolor adipisicing do",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/recipes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"recipes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "voluptate dolor adipisicing do",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get All Recipes Filtering",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/recipes?ninIngredients=est ut amet&ninIngredients=ex esse&name=voluptate dolor adipisicing do&servings=voluptate dolor adipisicing do&vegetarian=voluptate dolor adipisicing do&ingredients=est ut amet&ingredients=ex esse&instructions=voluptate dolor adipisicing do",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"recipes"
+							],
+							"query": [
+								{
+									"key": "ninIngredients",
+									"value": "est ut amet"
+								},
+								{
+									"key": "ninIngredients",
+									"value": "ex esse"
+								},
+								{
+									"key": "name",
+									"value": "voluptate dolor adipisicing do"
+								},
+								{
+									"key": "servings",
+									"value": "voluptate dolor adipisicing do"
+								},
+								{
+									"key": "vegetarian",
+									"value": "voluptate dolor adipisicing do"
+								},
+								{
+									"key": "ingredients",
+									"value": "est ut amet"
+								},
+								{
+									"key": "ingredients",
+									"value": "ex esse"
+								},
+								{
+									"key": "instructions",
+									"value": "voluptate dolor adipisicing do"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/recipes?ninIngredients=laboris sunt&ninIngredients=cillum aliqua veniam&name=voluptate dolor adipisicing do&servings=voluptate dolor adipisicing do&vegetarian=voluptate dolor adipisicing do&ingredients=laboris sunt&ingredients=cillum aliqua veniam&instructions=voluptate dolor adipisicing do",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"recipes"
+									],
+									"query": [
+										{
+											"key": "ninIngredients",
+											"value": "laboris sunt"
+										},
+										{
+											"key": "ninIngredients",
+											"value": "cillum aliqua veniam"
+										},
+										{
+											"key": "name",
+											"value": "voluptate dolor adipisicing do"
+										},
+										{
+											"key": "servings",
+											"value": "voluptate dolor adipisicing do"
+										},
+										{
+											"key": "vegetarian",
+											"value": "voluptate dolor adipisicing do"
+										},
+										{
+											"key": "ingredients",
+											"value": "laboris sunt"
+										},
+										{
+											"key": "ingredients",
+											"value": "cillum aliqua veniam"
+										},
+										{
+											"key": "instructions",
+											"value": "voluptate dolor adipisicing do"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"veniam est\",\n    \"name\": \"anim\",\n    \"servings\": 32593130,\n    \"vegetarian\": false,\n    \"ingredients\": [\n      {\n        \"name\": \"tempor\",\n        \"amount\": \"veniam sint nulla \"\n      },\n      {\n        \"name\": \"cillum proident aliquip\",\n        \"amount\": \"nulla laborum\"\n      }\n    ],\n    \"instructions\": \"in\"\n  },\n  {\n    \"id\": \"dolore consectetur\",\n    \"name\": \"aute Lorem in\",\n    \"servings\": -61676143,\n    \"vegetarian\": false,\n    \"ingredients\": [\n      {\n        \"name\": \"qui sed\",\n        \"amount\": \"nisi consectetur voluptate laborum commodo\"\n      },\n      {\n        \"name\": \"Ut commodo sed officia quis\",\n        \"amount\": \"dolor fugiat deserunt nisi\"\n      }\n    ],\n    \"instructions\": \"officia velit\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "create Recipe",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/recipes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/recipes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"recipes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"ea consequat\",\n  \"name\": \"aliqua minim e\",\n  \"servings\": 64569121,\n  \"vegetarian\": true,\n  \"ingredients\": [\n    {\n      \"name\": \"ex nisi elit ut\",\n      \"amount\": \"pariatur minim mollit sit\"\n    },\n    {\n      \"name\": \"fugiat eu nisi Lorem\",\n      \"amount\": \"incididunt\"\n    }\n  ],\n  \"instructions\": \"sit anim id\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

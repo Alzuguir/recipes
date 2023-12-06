@@ -1,0 +1,14 @@
+spring:
+  docker:
+    compose:
+      enabled: true
+      file: docker-compose.yml
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
